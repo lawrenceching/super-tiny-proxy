@@ -65,7 +65,7 @@ func init() {
 
 	rootCmd.PersistentFlags().StringP("from", "", "localhost:18080", "Address to listen")
 	rootCmd.PersistentFlags().StringP("to", "", "", "Proxy to")
-	rootCmd.MarkFlagRequired("to")
+	rootCmd.MarkPersistentFlagRequired("to")
 }
 
 func initConfig() {
